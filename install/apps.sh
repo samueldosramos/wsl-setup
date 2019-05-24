@@ -15,8 +15,6 @@ sudo apt -y install build-essential
 
 # Nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
-nvm install --lts
-nvm use --lts
 
 # Git
 sudo add-apt-repository ppa:git-core/ppa

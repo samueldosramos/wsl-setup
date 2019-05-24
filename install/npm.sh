@@ -6,13 +6,14 @@
 source ./install/utils.sh
 keep_sudo_alive
 
-var="nodejs"
+var="node"
 e_header "Verifying that $var is installed..."
-if which node &> /dev/null; then
+if which $var &> /dev/null; then
   e_success "$var is installed"
   else
   e_warning "Installing $var..."
-  yay -Sy $var npm
+  nvm install --lts
+  nvm use --lts
 fi
 
 # Packages
