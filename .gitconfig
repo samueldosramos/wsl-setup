@@ -1,0 +1,13 @@
+[user]
+	name = "<Your name here>"
+	email = <Your e-mail here>
+
+[github]
+	user = <Your username here>
+
+[core]
+	editor = nano
+	excludesfile = ~/.gitignore_global
+
+[color]
+	ui = auto
