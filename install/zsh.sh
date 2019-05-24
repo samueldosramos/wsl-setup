@@ -21,9 +21,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # Install Powerlevel10k theme
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
-# Set Zsh as your default shell:
-chsh -s /bin/zsh
-
 # Move/replace .zshrc to /Home
 replace ".zshrc"    ".zshrc"
 
