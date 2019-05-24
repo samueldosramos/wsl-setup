@@ -106,6 +106,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 autoload -Uz compinit
+ZSH_DISABLE_COMPFIX="true"
 
 # User configuration
 
