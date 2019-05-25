@@ -8,9 +8,6 @@ export ZSH="${HOME}/.oh-my-zsh"
 # Support 256 colors path
 export TERM="xterm-256color"
 
-# Powerlevel10k theme
-# source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-
 # nvm path
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -34,19 +31,13 @@ fi
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME=powerlevel10k/powerlevel10k
-POWERLEVEL9K_MODE="nerdfont-complete"
-POWERLEVEL9K_MODE="awesome-fontconfig"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
-POWERLEVEL9K_ROOT_ICON="#"
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "robbyrussell" )
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
