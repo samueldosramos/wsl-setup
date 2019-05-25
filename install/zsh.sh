@@ -18,14 +18,8 @@ git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugi
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-# Install Powerlevel10k theme
-sudo git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-
 # Move/replace .zshrc to /Home
 replace ".zshrc"    ".zshrc"
-
-# Warning message
-e_warning "Please, after finishing the installation, remember to change the font of your terminal app to your favorite Nerd Font."
 
 # Finish
 e_success "Finished Zsh settings."
