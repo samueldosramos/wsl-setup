@@ -13,16 +13,13 @@ sudo apt upgrade -y
 # Essential package
 sudo apt -y install build-essential
 
-# Nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
-
 # Git
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo apt -y update
 sudo apt -y install git
 
-# SSH
-sudo apt -y ssh
+# Nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
 
 #Yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
