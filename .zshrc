@@ -90,14 +90,13 @@ plugins=(
   extract
   git
   github
-  zsh-autosuggestions
   zsh-completions
-  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
-autoload -Uz compinit
-ZSH_DISABLE_COMPFIX="true"
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+autoload -U compinit && compinit
 
 # User configuration
 
