@@ -66,7 +66,7 @@ app_is_installed() {
   # Return value
   if [ $return_ = 0 ]; then
     e_warning "Installing $1..."
-     yay -Sy $1
+    sudo apt -y $1
   else
     e_success "$1 is installed"
   fi
