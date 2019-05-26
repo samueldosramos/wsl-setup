@@ -134,3 +134,15 @@ alias npmupdate="sudo npm update -g"
 
 # Undo the last commit
 alias uncommit="git reset HEAD~1"
+
+# Copy ssh
+alias copyssh="clip.exe < ~/.ssh/id_rsa.pub | echo '=> Public key copied to pasteboard.'"
+
+# Open Explorer in current folder
+alias explorer="explorer.exe ."
+
+# Open .zshrc in VSCode
+alias zshconfig="code-insiders ~/.zshrc" # Change code-insiders to code when implementing Remote - WSL extension
+
+# Source .zshrc
+alias zshup="source ~/.zshrc"
