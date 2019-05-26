@@ -42,6 +42,12 @@ is_confirmed() {
   return 1
 }
 
+# Print a question
+ask() {
+    e_header "$1"
+    read -r
+}
+
 # Keep-alive: update existing `sudo` time stamp until process has finished
 keep_sudo_alive() {
   while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
@@ -60,7 +66,7 @@ app_is_installed() {
   # Return value
   if [ $return_ = 0 ]; then
     e_warning "Installing $1..."
-    yay -Sy $1
+     yay -Sy $1
   else
     e_success "$1 is installed"
   fi
@@ -71,4 +77,11 @@ DOTFILES_DIRECTORY="$PWD"
 
 replace() {
   mv -f "${DOTFILES_DIRECTORY}/${1}" "${HOME}/${2}"
+}
+
+# Generate ssh key
+generate_ssh() {
+    ask "Please provide an email address: " && printf "\n"
+    ssh-keygen -t rsa -b 4096 -C "$REPLY"
+    e_success "Generate SSH keys"
 }

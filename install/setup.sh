@@ -38,6 +38,15 @@ else
     e_warning "Skipped npm settings update."
 fi
 
+# Generate ssh
+seek_confirmation "Warning: This step generate ssh"
+if is_confirmed; then
+    generate_ssh
+    e_warning "After finishing the installation, use copyssh command to copy the ssh key to the clipboard."
+else
+    e_warning "Skipped ssh settings."
+fi
+
 # Clean up cached downloads
 e_header "Clearing the cache..."
 sudo apt -y autoremove
