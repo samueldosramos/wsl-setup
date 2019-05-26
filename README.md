@@ -56,24 +56,7 @@ git clone https://github.com/samuelramox/windows-setup.git && cd windows-setup
 ./install/setup.sh
 ```
 
-## Setup after installation
-
-### SSH config
-
-Generate the key by replacing your email:
-
-```
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-```
-
-Copy the key with:
-
-```
-cat ~/.ssh/id_rsa.pub
-```
-
-Then add the generated key to your [GitHub](https://github.com/settings/keys)/[GitLab](https://gitlab.com/profile/keys) accounts.
-
 ### Reference
 
 - [Windows Subsystem for Linux Installation Guide for Windows 10](https://aka.ms/wslinstall)
+- [Visual Studio Code Remote - WSL](https://aka.ms/vscode-remote/download/wsl)
