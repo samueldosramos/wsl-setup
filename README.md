@@ -1,6 +1,6 @@
 # Windows Setup with WSL
 
-This is a simple dotfiles and scripts to install and customizing Windows with WSL.
+This is a simple dotfiles and scripts to setup Windows with WSL.
 
 **Note:** _This script was tested on a Lenovo Ideapad 330_
 
@@ -28,7 +28,7 @@ _Check linked files to more details._
 
 ## Installation
 
-**Note:** I use the [Automate Windows 10 Developer Machine Setup](https://gist.github.com/samuelramox/e25ae0286d827e242f46e2195057823d) script to configure Windows, install some apps and WSL. To use the script, just download and open it with `PowerShell`. If you use it, skip to step `Install dotfiles`.
+**Note:** I use the [Automate Windows 10 Developer Machine Setup](https://gist.github.com/samuelramox/e25ae0286d827e242f46e2195057823d) script to configure Windows, install some apps and WSL. To use the script, just download and open it with `PowerShell`. If you use it, skip to step [Install dotfiles](#install-dotfiles).
 
 ### Install WSL
 
