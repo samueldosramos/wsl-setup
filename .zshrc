@@ -132,3 +132,10 @@ alias zshconfig="code-insiders ~/.zshrc" # Change code-insiders to code when imp
 
 # Source .zshrc
 alias zshup="source ~/.zshrc"
+
+# --------------------------- Custom functions --------------------------------
+# ssh-agent
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+    eval `ssh-agent`
+    ssh-add
+fi
