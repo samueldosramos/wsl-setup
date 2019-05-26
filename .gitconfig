@@ -1,9 +1,11 @@
+# Don't remove the quotation marks
+
 [user]
-	name = "<Your name here>"
-	email = <Your e-mail here>
+	name = "Your name here"
+	email = Your e-mail here
 
 [github]
-	user = <Your username here>
+	user = Your username here
 
 [core]
 	editor = nano

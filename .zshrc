@@ -4,7 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
 
-# ========== Custom paths ==========
+# --------------------------- Custom paths ------------------------------------
 # Support 256 colors path
 export TERM="xterm-256color"
 
@@ -12,20 +12,6 @@ export TERM="xterm-256color"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# ssh-agent
-export SSH_AUTH_SOCK=$HOME/.ssh-socket
-
-ssh-add -l ? /dev/null 2>&1
-if [ $? = 2 ]; then
-  rm -rf $SSH_AUTH_SOCK
-  ssh-agent -a $SSH_AUTH_SOCK >| /tmp/.ssh-script
-  source /tmp/.ssh-script
-  echo $SSH_AGENT_PID >| ~/.ssh-agent-pid
-  rm /tmp/.ssh-script
-
-  ssh-add
-fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -124,7 +110,7 @@ autoload -U compinit && compinit
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# ========== Custom aliases ==========
+# --------------------------- Custom aliases ----------------------------------
 
 # List npm packages installed globally
 alias npmlist="npm list -g --depth=0"

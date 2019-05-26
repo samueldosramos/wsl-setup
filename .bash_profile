@@ -2,7 +2,7 @@
 #
 # Bash profile with paths and aliases
 
-# ========== Aliases ==========
+# --------------------------- Aliases -----------------------------------------
 # List npm packages installed globally
 alias npmlist="npm list -g --depth=0"
 
@@ -17,7 +17,7 @@ alias ls="ls -GF"
 alias ll="ls -lG"
 alias la="ls -aGF"
 
-# ========== Others resources ==========
+# --------------------------- Others resources --------------------------------
 # Export terminal colors
 export TERM="xterm-256color"
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$(parse_git_branch) $ "
