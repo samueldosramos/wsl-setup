@@ -56,7 +56,21 @@ git clone https://github.com/samuelramox/windows-setup.git && cd windows-setup
 ./install/setup.sh
 ```
 
-### Reference
+## Setup after installation
+
+### Enable clipboard history
+
+Open the `Settings` app and go to the `System group of settings`. Select the `Clipboard` tab, and turn on `Clipboard History`.
+
+### Block non-Store apps
+
+Settings -> Apps -> Apps & features -> The Microsoft Store only (recommended).
+
+### Remote - WSL
+
+Install the [Remote - WSL](https://aka.ms/vscode-remote/download/wsl) extension in VSCode to get a better experience with WSL.
+**Note:** _So far, you need Visual Studio Code Insiders to use this extension_
+
+## Reference
 
 - [Windows Subsystem for Linux Installation Guide for Windows 10](https://aka.ms/wslinstall)
-- [Visual Studio Code Remote - WSL](https://aka.ms/vscode-remote/download/wsl)
