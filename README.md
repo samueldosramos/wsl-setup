@@ -1,6 +1,6 @@
 # WSL Ubuntu Dotfiles
 
-This is a simple dotfiles and scripts to setup Windows with WSL.
+This is a simple dotfiles and scripts to setup _Windows Subsystem for Linux (WSL)_ with _Ubuntu_.
 
 ## Features
 
