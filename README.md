@@ -57,17 +57,7 @@ git clone https://github.com/samuelramox/wsl-setup.git && cd wsl-setup
 ./install/setup.sh
 ```
 
-## Manual setup after installation
-
-### Enable clipboard history
-
-Open the `Settings` app and go to the `System group of settings`. Select the `Clipboard` tab, and turn on `Clipboard History`.
-
-### Block non-Store apps
-
-Settings -> Apps -> Apps & features -> The Microsoft Store only (recommended).
-
-### Remote - WSL
+## Remote - WSL
 
 Install the [Remote - WSL](https://aka.ms/vscode-remote/download/wsl) extension in VSCode to get a better experience with `WSL`.
 **Note:** _So far, you need Visual Studio Code Insiders to use this extension_
