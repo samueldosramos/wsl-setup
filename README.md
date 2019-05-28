@@ -1,4 +1,4 @@
-# WSL Dotfiles
+# WSL Ubuntu Dotfiles
 
 This is a simple dotfiles and scripts to setup Windows with WSL.
 
