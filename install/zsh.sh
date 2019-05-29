@@ -20,6 +20,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-sy
 
 # Set Zsh as your default shell:
 chsh -s /bin/zsh
+source ${HOME}/.zshrc
 
 # Move/replace .zshrc to /Home
 replace ".zshrc"    ".zshrc"
