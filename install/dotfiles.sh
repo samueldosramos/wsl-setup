@@ -21,12 +21,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-sy
 
 # Set Zsh as your default shell:
 chsh -s /bin/zsh
-source ${HOME}/.zshrc
 
 # Move/replace setting files to /Home
 replace ".gitconfig"        ".gitconfig"
 replace ".gitignore_global" ".gitignore_global"
-replace ".zshrc"    ".zshrc"
+replace ".zshrc"            ".zshrc"
 
 # Git configs
 e_header "Configure your Git settings: "

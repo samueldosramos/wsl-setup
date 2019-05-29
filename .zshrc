@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Skip verification of insecure directories (for plugins)
-#ZSH_DISABLE_COMPFIX=true
+ZSH_DISABLE_COMPFIX=true
 
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"

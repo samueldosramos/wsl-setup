@@ -5,16 +5,10 @@
 
 source ./install/utils.sh
 keep_sudo_alive
+source ~/.bashrc
 
-var="node"
-e_header "Verifying that $var is installed..."
-if which $var &> /dev/null; then
-  e_success "$var is installed"
-  else
-  e_warning "Installing $var..."
-  nvm install --lts
-  nvm use --lts
-fi
+nvm install --lts
+nvm use --lts
 
 # Packages
 npm install -g create-react-app

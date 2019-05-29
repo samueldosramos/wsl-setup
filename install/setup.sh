@@ -45,8 +45,8 @@ sudo apt -y autoremove
 
 # Remove the installation zip and folder
 e_header "Removing unnecessary files"
-rm -rf ${HOME}/dotfiles.tar.gz
-rm -rf ${HOME}/dotfiles.zip
+rm -rf ${HOME}/wsl-setup.tar.gz
+rm -rf ${HOME}/wsl-setup.zip
 rm -rf ${DOTFILES_DIRECTORY}
 
 # Finish
