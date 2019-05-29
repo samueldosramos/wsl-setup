@@ -18,6 +18,9 @@ sudo add-apt-repository -y ppa:git-core/ppa
 sudo apt -y update
 sudo apt -y install git
 
+# Nodejs
+sudo apt install -y nodejs npm
+
 # Nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
