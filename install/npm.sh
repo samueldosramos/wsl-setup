@@ -4,7 +4,6 @@
 # Add or exclude packages before installation
 
 source ./install/utils.sh
-source ~/.zshrc
 keep_sudo_alive
 
 var="node"
