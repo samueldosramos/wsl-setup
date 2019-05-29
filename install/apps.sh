@@ -19,7 +19,7 @@ sudo apt -y update
 sudo apt -y install git
 
 # Nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
 #Yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
