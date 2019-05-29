@@ -9,7 +9,7 @@ keep_sudo_alive
 sudo apt -y install zsh
 
 # Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 # Install some external plugins:
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
@@ -17,6 +17,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+
+# Set Zsh as your default shell:
+chsh -s /bin/zsh
 
 # Move/replace .zshrc to /Home
 replace ".zshrc"    ".zshrc"

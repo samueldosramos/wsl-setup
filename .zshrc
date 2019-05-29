@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Skip verification of insecure directories (for plugins)
+#ZSH_DISABLE_COMPFIX=true
+
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
 
@@ -76,13 +79,13 @@ plugins=(
   extract
   git
   github
-  zsh-completions
 )
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-autoload -U compinit && compinit
+fpath=(/usr/local/share/zsh-completions $fpath)
+autoload -Uz compinit
 
 # User configuration
 
