@@ -37,7 +37,7 @@ If you do not already have `WSL`, follow these steps to install. Open `Powershel
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
-After restarting, install Ubuntu via terminal:
+After restarting, install Ubuntu from the [Microsoft Store](https://www.microsoft.com/pt-br/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab) or through the terminal:
 
 ```
 curl.exe -L -o ubuntu-1804.appx https://aka.ms/wsl-ubuntu-1804
