@@ -4,14 +4,6 @@
 
 source ./install/utils.sh
 
-# Dotfiles configs
-seek_confirmation "Warning: This step may overwrite your existing dotfiles and git configs."
-if is_confirmed; then
-    bash ./install/dotfiles.sh
-else
-    e_warning "Skipped dotfiles settings."
-fi
-
 # Install applications
 seek_confirmation "Warning: This step install applications."
 if is_confirmed; then
@@ -22,12 +14,12 @@ else
     e_warning "Skipped applications install."
 fi
 
-# Install Zsh
-seek_confirmation "Warning: This step install Zsh and some plugins."
+# Dotfiles configs
+seek_confirmation "Warning: This step may overwrite your existing dotfiles and git configs."
 if is_confirmed; then
-    bash ./install/zsh.sh
+    bash ./install/dotfiles.sh
 else
-    e_warning "Skipped Zsh settings update."
+    e_warning "Skipped dotfiles settings."
 fi
 
 # Install npm packages

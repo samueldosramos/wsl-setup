@@ -13,11 +13,9 @@ _Check linked files to more details._
 - [npm.sh](install/npm.sh) - install npm packages.
 - [setup.sh](install/setup.sh) - main installer.
 - [util.sh](install/util.sh) - support functions for other installers.
-- [zsh.sh](install/zsh.sh) - Zsh installer.
 
 ### Settings Files
 
-- [bash_profile](.bash_profile) - some fallback configs to bash.
 - [gitconfig](.gitconfig) - basic git settings.
 - [gitignore_global](.gitignore_global) - global gitignore.
 - [zshrc](.zshrc) - terminal configs with aliases, paths, plugins and theme.
@@ -59,7 +57,7 @@ git clone https://github.com/samuelramox/wsl-setup.git && cd wsl-setup
 
 ## Remote - WSL
 
-Install the [Remote - WSL](https://aka.ms/vscode-remote/download/wsl) extension in VSCode to get a better experience with `WSL`.   
+Install the [Remote - WSL](https://aka.ms/vscode-remote/download/wsl) extension in VSCode to get a better experience with `WSL`.
 **Note:** _So far, you need Visual Studio Code Insiders to use this extension_
 
 ## Reference
