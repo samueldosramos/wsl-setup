@@ -47,7 +47,7 @@ Launch `Ubuntu.exe` from the _Start Menu_. You’ll be asked to enter a username
 
 ### Install dotfiles
 
-If you already have `Windows 10` and `WSL` installed, run these commands:
+If you already have `Windows 10` and `WSL` installed, run these commands in `WSL`:
 
 ```
 git clone https://github.com/samuelramox/wsl-setup.git && cd wsl-setup
