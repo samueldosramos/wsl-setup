@@ -131,7 +131,7 @@ alias copyssh="clip.exe < ~/.ssh/id_rsa.pub | echo '=> Public key copied to past
 alias explorer="explorer.exe ."
 
 # Open .zshrc in VSCode
-alias zshconfig="code-insiders ~/.zshrc" # Change code-insiders to code when implementing Remote - WSL extension
+alias zshconfig="code ~/.zshrc"
 
 # Source .zshrc
 alias zshup="source ~/.zshrc"
