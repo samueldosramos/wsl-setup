@@ -115,6 +115,9 @@ autoload -Uz compinit
 
 # --------------------------- Custom aliases ----------------------------------
 
+# Update Ubuntu packages
+alias update="sudo apt update && sudo apt upgrade"
+
 # List npm packages installed globally
 alias npmlist="npm list -g --depth=0"
 
@@ -135,6 +138,10 @@ alias zshconfig="code ~/.zshrc"
 
 # Source .zshrc
 alias zshup="source ~/.zshrc"
+
+# Open Windows user directory
+WINUSER=$(echo $USER | cut -c1-5)
+alias winhome="/mnt/c/Users/$WINUSER"
 
 # --------------------------- Custom functions --------------------------------
 # ssh-agent
