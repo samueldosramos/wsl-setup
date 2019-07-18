@@ -25,10 +25,13 @@ sudo apt install -y nodejs npm
 # Nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
-#Yarn
+# Yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt -y update && sudo apt -y install yarn
+
+# Ubuntu WSL
+sudo apt install ubuntu-wsl
 
 # Finish
 e_success "Finished applications installation."
