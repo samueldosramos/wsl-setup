@@ -57,8 +57,9 @@ Launch `Ubuntu.exe` from the _Start Menu_. You’ll be asked to enter a username
 If you already have `Windows 10` and `WSL` installed, run these commands in `WSL`:
 
 ```
-git clone https://github.com/samuelramox/wsl-setup.git && cd wsl-setup
-
+git clone https://github.com/samuelramox/wsl-setup.git
+chmod 700 wsl-setup/ -R
+cd wsl-setup
 ./install/setup.sh
 ```
 
