@@ -43,6 +43,12 @@ After restarting, install Ubuntu from the [Microsoft Store](https://www.microsof
 curl.exe -L -o ubuntu-1804.appx https://aka.ms/wsl-ubuntu-1804
 ```
 
+Additionally, if you want to make WSL 2 your default architecture you can do so with this command:
+
+```
+wsl --set-default-version 2
+```
+
 Launch `Ubuntu.exe` from the _Start Menu_. You’ll be asked to enter a username and password (for sudo stuff).
 
 ### Install dotfiles
