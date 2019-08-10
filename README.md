@@ -40,7 +40,13 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 After restarting, install Ubuntu from the [Microsoft Store](https://www.microsoft.com/pt-br/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab) or through the terminal:
 
 ```
-curl.exe -L -o ubuntu-1804.appx https://aka.ms/wsl-ubuntu-1804
+curl.exe -L -o ubuntu.appx https://aka.ms/wsl-ubuntu
+```
+
+Additionally, if you want to make WSL 2 your default architecture you can do so with this command:
+
+```
+wsl --set-default-version 2
 ```
 
 Launch `Ubuntu.exe` from the _Start Menu_. You’ll be asked to enter a username and password (for sudo stuff).
@@ -62,3 +68,4 @@ Install the [Remote - WSL](https://aka.ms/vscode-remote/download/wsl) extension 
 ## Reference
 
 - [Windows Subsystem for Linux Installation Guide for Windows 10](https://aka.ms/wslinstall)
+- [WSL 2](https://aka.ms/wsl2)
