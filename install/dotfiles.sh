@@ -32,4 +32,4 @@ e_header "Configure your Git settings: "
 nano ${HOME}/.gitconfig
 
 # Finish
-e_success "Dotfiles update complete!"
+e_success "Dotfiles update complete."

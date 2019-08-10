@@ -34,12 +34,14 @@ else
 fi
 
 # Generate ssh
-seek_confirmation "Warning: This step generate ssh"
+seek_confirmation "Warning: This step generate SSH"
 if is_confirmed; then
-  generate_ssh
-  e_warning "After finishing the installation, use copyssh command to copy the ssh key to the clipboard."
+  ask "Please provide an email address: " && printf "\n"
+  ssh-keygen -t rsa -b 4096 -C "$REPLY"
+  e_success "Generated SSH key."
+  e_warning "After finishing the installation, use copyssh command to copy the SSH key to the clipboard."
 else
-  e_warning "Skipped ssh settings."
+  e_warning "Skipped SSH settings."
 fi
 
 # Create a directory for projects and development
