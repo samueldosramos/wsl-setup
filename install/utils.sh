@@ -2,6 +2,9 @@
 #
 # Some functions used in install scripts
 
+# Global variables
+DOTFILES_DIRECTORY="$PWD"
+
 # Header logging
 e_header() {
   printf "\n$(tput setaf 3)%s$(tput sgr0)\n" "$@"
@@ -44,8 +47,8 @@ is_confirmed() {
 
 # Print a question
 ask() {
-    e_header "$1"
-    read -r
+  e_header "$1"
+  read -r
 }
 
 # Keep-alive: update existing `sudo` time stamp until process has finished
@@ -73,15 +76,13 @@ app_is_installed() {
 }
 
 # Force move/replace files
-DOTFILES_DIRECTORY="$PWD"
-
 replace() {
   mv -f "${DOTFILES_DIRECTORY}/${1}" "${HOME}/${2}"
 }
 
 # Generate ssh key
 generate_ssh() {
-    ask "Please provide an email address: " && printf "\n"
-    ssh-keygen -t rsa -b 4096 -C "$REPLY"
-    e_success "Generate SSH keys"
+  ask "Please provide an email address: " && printf "\n"
+  ssh-keygen -t rsa -b 4096 -C "$REPLY"
+  e_success "Generate SSH keys"
 }

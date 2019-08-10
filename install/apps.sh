@@ -31,6 +31,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt -y update && sudo apt -y install yarn
 
 # Ubuntu WSL
+# Check out https://github.com/wslutilities/wslufor more details
 sudo apt install ubuntu-wsl
 
 # Finish
