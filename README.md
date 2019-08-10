@@ -40,7 +40,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 After restarting, install Ubuntu from the [Microsoft Store](https://www.microsoft.com/pt-br/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab) or through the terminal:
 
 ```
-curl.exe -L -o ubuntu-1804.appx https://aka.ms/wsl-ubuntu-1804
+curl.exe -L -o ubuntu.appx https://aka.ms/wsl-ubuntu
 ```
 
 Additionally, if you want to make WSL 2 your default architecture you can do so with this command:
