@@ -68,3 +68,4 @@ Install the [Remote - WSL](https://aka.ms/vscode-remote/download/wsl) extension 
 ## Reference
 
 - [Windows Subsystem for Linux Installation Guide for Windows 10](https://aka.ms/wslinstall)
+- [WSL 2](https://aka.ms/wsl2)
