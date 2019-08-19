@@ -38,16 +38,16 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
 
-After restarting, install Ubuntu from the [Microsoft Store](https://www.microsoft.com/pt-br/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab) or through the terminal:
-
-```
-curl.exe -L -o ubuntu.appx https://aka.ms/wsl-ubuntu
-```
-
 Additionally, if you want to make WSL 2 your default architecture you can do so with this command:
 
 ```
 wsl --set-default-version 2
+```
+
+After restarting, install Ubuntu from the [Microsoft Store](https://www.microsoft.com/pt-br/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab) or through the terminal:
+
+```
+curl.exe -L -o ubuntu.appx https://aka.ms/wsl-ubuntu
 ```
 
 Launch `Ubuntu.exe` from the _Start Menu_. You’ll be asked to enter a username and password (for sudo stuff).
