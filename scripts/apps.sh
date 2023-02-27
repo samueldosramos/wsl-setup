@@ -18,14 +18,14 @@ sudo apt install -y ubuntu-wsl
 sudo apt install -y build-essential
 
 # Common packages
-sudo apt install -y apt-transport-https ca-certificates curl gawk ssh-askpass tree unzip wget yarn zsh
+sudo apt install -y apt-transport-https ca-certificates curl gawk ssh-askpass tree unzip wget zsh
 
 # Git
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo apt update && sudo apt install -y git
 
 # Nodejs
-sudo apt install -y nodejs npm
+sudo apt install -y nodejs npm yarn
 
 # Finish
 echo_success "Finished applications installation."
