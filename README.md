@@ -15,12 +15,12 @@ _Check linked files to more details._
 - [ssh.sh](scripts/ssh.sh) - generate _SSH_.
 - [user.sh](scripts/user.sh) - user data to configuration of _Git_ and _SSH_.
 - [utils.sh](scripts/utils.sh) - support functions for other installers.
-- [zshrc](.zshrc) - terminal configs with aliases, paths, plugins and theme (this file is permanent after installation).
+- [.zshrc](.zshrc) - terminal configs with aliases, paths, plugins and theme (this file is permanent after installation).
 
 ## Prerequisites
 
-- Windows 10 or later **(recommended is Windows 11)**
-- WSL (Windows Subsystem for Linux) with _Debian/Ubuntu_ based
+- Updated Windows 10 or later **(recommended is Windows 11)**
+- WSL 2 with _Debian/Ubuntu_ based
 
 ## Installation
 
@@ -60,4 +60,4 @@ Install the [Remote - WSL](https://aka.ms/vscode-remote/download/wsl) extension 
 
 - [Oh My Posh](https://ohmyposh.dev)
 - [Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
-- [winstall](https://winstall.app)
+- [Winstall](https://winstall.app)
