@@ -25,6 +25,7 @@ sudo add-apt-repository -y ppa:git-core/ppa
 sudo apt update && sudo apt install -y git
 
 # Nodejs
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt install -y nodejs npm yarn
 
 # Finish
