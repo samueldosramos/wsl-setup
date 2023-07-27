@@ -26,7 +26,7 @@ sudo apt update && sudo apt install -y git
 
 # Nodejs
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-sudo apt install -y nodejs npm yarn
+sudo apt install -y nodejs yarn
 
 # Finish
 echo_success "Finished applications installation."
