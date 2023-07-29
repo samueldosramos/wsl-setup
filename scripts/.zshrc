@@ -12,6 +12,10 @@ export ZSH=$HOME/.oh-my-zsh
 # Support 256 colors path
 export TERM="xterm-256color"
 
+# npm ENV
+# Fix EACCES permissions errors when installing packages globally
+NPM_CONFIG_PREFIX=~/.npm-global
+
 # --------------------------- Plugins ----------------------------------
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/

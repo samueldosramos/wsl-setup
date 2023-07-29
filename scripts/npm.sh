@@ -12,6 +12,11 @@ echo_info "Installing node and npm packages..."
 asdf plugin-add nodejs
 asdf global nodejs system
 
+# Resolving EACCES permissions errors when installing packages globally
+# Check out https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally more details
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+
 # npm packages
 PACKAGES=(
   create-react-app
