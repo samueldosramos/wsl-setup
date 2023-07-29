@@ -25,7 +25,7 @@ plugins=(
   asdf
   colored-man-pages
   extract
-  fast-syntax-highlighting
+  F-Sy-H
   zsh-autosuggestions
   zsh-completions
 )
