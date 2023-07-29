@@ -9,9 +9,6 @@ ZSH_THEME="robbyrussell"
 # oh-my-zsh path
 export ZSH=$HOME/.oh-my-zsh
 
-# Personal data
-source ~/user.sh
-
 # Support 256 colors path
 export TERM="xterm-256color"
 
