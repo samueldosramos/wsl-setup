@@ -19,7 +19,6 @@ npm config set prefix '~/.npm-global'
 
 # npm packages
  PACKAGES=(
-   create-react-app
    eslint
    eslint-plugin-mdx
    prettier
