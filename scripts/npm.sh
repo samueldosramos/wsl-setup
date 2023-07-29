@@ -17,5 +17,21 @@ asdf global nodejs system
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 
+# npm packages
+ PACKAGES=(
+   create-react-app
+   eslint
+   eslint-plugin-mdx
+   prettier
+   sass
+   typescript
+   yalc
+ )
+
+ for package in ${PACKAGES[@]}
+ do
+   npm install -g $package
+ done
+
 # Finish
 echo_success "Finished Node.js and npm settings."
