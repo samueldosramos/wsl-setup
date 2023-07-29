@@ -10,7 +10,7 @@ _Check linked files to more details._
 
 - [apps.sh](scripts/apps.sh) - installs applications.
 - [dotfiles.sh](scripts/dotfiles.sh) - installs _Oh My Zsh_, _.zshrc_ and _Git_ configs.
-- [npm.sh](scripts/npm.sh) - install _npm_ packages.
+- [npm.sh](scripts/npm.sh) - _Node.js_ and _npm_ settings.
 - [setup.sh](setup.sh) - main installer.
 - [ssh.sh](scripts/ssh.sh) - generate _SSH_.
 - [user.sh](scripts/user.sh) - user data to configuration of _Git_ and _SSH_.

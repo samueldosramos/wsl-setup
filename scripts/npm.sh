@@ -6,7 +6,7 @@
 source ./scripts/utils.sh
 . $HOME/.asdf/asdf.sh
 
-echo_info "Setting node and npm packages..."
+echo_info "Setting Node.js and npm packages..."
 
 # Install asdf nodejs plugin and nodejs
 asdf plugin-add nodejs
@@ -18,4 +18,4 @@ mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 
 # Finish
-echo_success "Finished node settings."
+echo_success "Finished Node.js and npm settings."
