@@ -17,7 +17,7 @@ bash ./scripts/apps.sh
 # Install dotfiles
 bash ./scripts/dotfiles.sh
 
-# Install node and npm packages
+# Setting node and npm packages
 bash ./scripts/npm.sh
 
 # Generate SSH key

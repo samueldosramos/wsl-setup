@@ -6,7 +6,7 @@
 source ./scripts/utils.sh
 . $HOME/.asdf/asdf.sh
 
-echo_info "Installing node and npm packages..."
+echo_info "Setting node and npm packages..."
 
 # Install asdf nodejs plugin and nodejs
 asdf plugin-add nodejs
@@ -17,23 +17,5 @@ asdf global nodejs system
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 
-# npm packages
-PACKAGES=(
-  create-react-app
-  create-react-native-app
-  eslint
-  eslint-plugin-mdx
-  gulp-cli
-  prettier
-  sass
-  typescript
-  yalc
-)
-
-for package in ${PACKAGES[@]}
-do
-  npm install -g $package
-done
-
 # Finish
-echo_success "Finished node and npm packages settings."
+echo_success "Finished node settings."
