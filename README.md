@@ -15,7 +15,7 @@ _Check linked files to more details._
 - [ssh.sh](scripts/ssh.sh) - generate _SSH_.
 - [user.sh](scripts/user.sh) - user data to configuration of _Git_ and _SSH_.
 - [utils.sh](scripts/utils.sh) - support functions for other installers.
-- [.zshrc](.zshrc) - terminal configs with aliases, paths, plugins and theme (this file is permanent after installation).
+- [.zshrc](scripts/.zshrc) - terminal configs with aliases, paths, plugins and theme (this file is permanent after installation).
 
 ## Prerequisites
 
